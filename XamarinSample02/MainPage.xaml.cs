@@ -13,5 +13,10 @@ namespace XamarinSample02
         {
             InitializeComponent();
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            this.Lab02.Text = "Xamariiiiiiin!";
+        }
     }
 }

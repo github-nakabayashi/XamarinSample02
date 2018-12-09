@@ -1,7 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XamarinSample02" x:Class="XamarinSample02.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label
+            x:Name="Lab01" AutomationId="Lab01"
+            Text="Welcome to Xamarin.Forms!" 
+            HorizontalOptions="Center" 
+            VerticalOptions="EndAndExpand" />
+        <Label
+            x:Name="Lab02" AutomationId="Lab02"
+            Text="Xamarin" 
+            HorizontalOptions="Center" 
+            VerticalOptions="StartAndExpand" />
+        <Button 
+            x:Name="Btn01" AutomationId="Btn01"
+            Text="Disp!"
+            VerticalOptions="StartAndExpand"
+            Clicked="Handle_Clicked"
+            />
     </StackLayout>
 </ContentPage>
