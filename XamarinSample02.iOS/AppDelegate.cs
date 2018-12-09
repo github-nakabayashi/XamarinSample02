@@ -22,11 +22,16 @@ namespace XamarinSample02.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Xamarin.Calabash.Start();
+
+#if ENABLE_TEST_CLOUD
+    Xamarin.Calabash.Start();
+#endif
+            //Xamarin.Calabash.Start();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
         }
+
     }
 }
