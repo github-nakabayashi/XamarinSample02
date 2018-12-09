@@ -24,7 +24,7 @@ namespace XamarinSample02
 
             AppCenter.Start("ios=82769157-0f81-45f0-8011-60698465b68b;"
                             + "uwp=0;"
-                            + "android=YourAndroid",
+                            + "android=0480d2fd-33cb-45ab-981d-2f6c919ff56e",
                             typeof(Analytics), typeof(Crashes));
         }
 
